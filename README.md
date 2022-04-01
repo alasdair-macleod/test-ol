@@ -1,4 +1,4 @@
-# TestOl
+# TestOl - to reproduce bug, run yarn, then yarn build
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
 ng build fails with the error 
