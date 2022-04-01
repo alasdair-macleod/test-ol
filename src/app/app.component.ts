@@ -8,5 +8,4 @@ import { TestClass } from './gml-test'
 })
 export class AppComponent {
   title = 'test-ol';
-  test = new TestClass()
 }
