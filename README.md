@@ -1,6 +1,17 @@
 # TestOl
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
+ng build fails with the error 
+
+Error: node_modules/ol/format/GMLBase.d.ts:243:15 - error TS2416: Property 'readGeometryFromNode' in type 'GMLBase' is not assignable to the same property in base type 'XMLFeature'.
+  Type '(node: Element, opt_options?: ReadOptions | undefined) => Geometry | Extent' is not assignable to type '(node: Element, opt_options?: ReadOptions | undefined) => Geometry'.
+    Type 'Geometry | Extent' is not assignable to type 'Geometry'.
+      Type 'number[]' is missing the following properties from type 'Geometry': extent_, extentRevision_, simplifiedGeometryMaxMinSquaredTolerance, simplifiedGeometryRevision, and 51 more.
+
+243     protected readGeometryFromNode(node: Element, opt_options?: import("./Feature.js").ReadOptions | undefined): import("../geom/Geometry.js").default | import("../extent.js").Extent;
+                  ~~~~~~~~~~~~~~~~~~~~
+
+the file gml-test.ts contains the code that causes the failure.
 
 ## Development server
 
