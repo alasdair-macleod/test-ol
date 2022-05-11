@@ -13,7 +13,6 @@ Error: node_modules/ol/format/GMLBase.d.ts:243:15 - error TS2416: Property 'read
 
 the file gml-test.ts contains the code that causes the failure.
 
-Test - test
 
 ## Development server
 
